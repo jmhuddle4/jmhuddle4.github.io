@@ -21,11 +21,11 @@ body {
 	}
 	
 #header{
-
+	//yellow
 	line-height:160px; margin:0 auto; width:940px; text-align:center;
 	height: 121px;
 	background: #262626;
-  	position: relative;
+  	position: 500px;
 	
 	}
  
