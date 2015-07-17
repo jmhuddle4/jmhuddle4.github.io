@@ -16,16 +16,16 @@ body {
 	background: #262626;
 	border:1px solid #666; height:100px; left:0; position:fixed; width:100%; top:0; 
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 100px;
 	
 	}
 	
 #header{
 	//yellow
-	line-height:160px; margin:0 auto; width:940px; text-align:center;
+	line-height:60px; margin:0 auto; width:940px; text-align:center;
 	height: 121px;
 	background: #262626;
-  	position: 500px;
+  	position: relative;
 	
 	}
  
