@@ -1,7 +1,7 @@
 /* Reset body padding and margins */
 body { 
 
-	font-family: "Avenir";
+	font-family: "Arial";
 	background-image:url('https://41.media.tumblr.com/12abd6d1e909c9360c46c78a03f1f0a8/tumblr_nqpwr3NNX91uzg32xo2_1280.jpg');
 	margin:0; 
 	padding:0; 
@@ -10,7 +10,7 @@ body {
 	
 	}
  
-/* Make Header Sticky */
+/* Make Header Sticky - use stylesheet2 for header and nav*/
 #header_container { 
 
 	
