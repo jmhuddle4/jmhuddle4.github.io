@@ -18,11 +18,12 @@
 <li><a href="index.html">Home</a></li>
 </ul>
 </div>
+
 <div id="container">
     <div id="content">
     	
-      	<b>CSC 542 Artificial Intelligence</b> <br/>
-          Artificially Intelligent Tic Tac Toe C++ <br/>
+      	<h2>CSC 542 Artificial Intelligence</h2> <br/>
+          <h3>Artificially Intelligent Tic Tac Toe C++ </h3><br/>
           Spring 2015 <br/><br/>
 
           Tic-tac-toe can be played on a general nrRows x nrCols board where a player wins by having nrToWin of its 
@@ -45,7 +46,51 @@
 	
     </div> <br/> <br/> <br/> 
     <div>
-    	
+          <h3>Artificially Intelligent Maze Solver Java </h3><br/>
+          Spring 2015 <br/><br/>
+          1) <b>Maze Generation</b><br/>
+
+	The program takes the following arguments from the command line: <br/><br/>
+	
+	nrRows   nrCols   maze.txt<br/><br/>
+	
+	Where nrRows is the number of rows, nrCols is the number of columns, and maze.txt is the name of
+	the output file. The program generates random maze details which are written to the file maze.txt. 
+	The format of the output file is as follows: <br/><br/>
+	
+	- First line contains the number of rows and the number of columns<br/>
+	- Second line contains the number of remaining lines in the file<br/>
+	- Each line from the third to the last contains the row index, the column index, and a string 
+	describing which walls are up (the line 2 3 LRU indicates that the cell in row 2 and column 3 has the left, 
+	right, and up walls).<br/>
+	- L for the left wall<br/>
+	- R for the right wall<br/>
+	- U for the up wall<br/>
+	- D for the down wall<br/><br/><br/>
+	
+	
+	2) <b>Maze Search</b><br/>
+	
+	The program takes the following arguments from the command line:<br/>
+	
+	method   maze.txt   rstart   cstart   rend   cend   path.txt<br/><br/>
+	
+	Where method is the name of the search method, maze.txt is the name of the file with the maze details, 
+	rstart is the row index of the start position, cstart is the column index of the start position, rend is 
+	the row index of the end position, cend is the column index of the end position.<br/><br/>
+	
+	The method name is as follows: DFS for depth-first search or BFS for breadth-first search.
+	The program reads the file maze.txt and searches for a solution from (rstart, cstart) to
+	(rend, cend). It then writes the solution to the file path.txt. The format of the output file
+	is as follows:<br/><br/>
+	
+	- first line contains the number of elements in the path<br/>
+	- each line from the second to the last contains the row index and the column index of the i-th cell in
+	the path<br/><br/>
+	
+	The text files are then translated by a function which outputs the maze and path to a GUI.<br/>
+
+          
     </div>
 <br/>
 
