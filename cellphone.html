@@ -23,7 +23,12 @@
     <b>Goal: </b>Given an input on a phone keypad, print all possible combinations of strings that could be made using the
     letters assigned to each key. <br/><br/>
     
-    <b>Interface: </b>The FXML document defines the layout and objects of the graphical user interface. Each key is an image with an fx id which is what the controller class uses to identify the object when it is clicked.
+    <b>Logic: </b> The prgram uses a 2D String array to map the correct set of the letters to its repesctive key index. 
+    The function to generate the combinations uses a linked list to hold the combination and a helper function, and then returns
+    the final combination. The helper function takes an input except for the first number, as the input, and calls itself recursively
+    until it find all possible combinations.
+    
+    <b>Interface: </b>Program written in Java using the JavaFX framework. The FXML document defines the layout and objects of the graphical user interface. Each key is an image with an fx id which is what the controller class uses to identify the object when it is clicked.
     The controller class defines the functions and logic behind the interface. It updates the input variable every time a button is clicked, and then it'll perform the combination algorithm when the user clicks 'go', and displays it in the text area.
     
     <br/><br/>
