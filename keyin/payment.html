@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet2.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+  <title>Payment</title>
+ </head>
+
+ <body>
+ <div id="header_container">
+    <div id="header">
+    <img src="img/smalllogo.png">
+    </div>
+</div>
+<div id="nav">
+<ul>
+<li><a href="default.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="locations.html">Locations</a></li>
+<li><a href="cars.html">Cars</a></li>
+<li><a href="reserve.html">Reserve</a></li>
+<li><a href="contact.php">Contact</a></li>
+<li><a href="deals.html">Specials</a></li>
+</ul>
+</div>
+<div id="container">
+    <div id="content">
+ 	<br>
+    <b><h1>Car Payment</h1></b>
+  <p>
+  <form  action="" method="POST" enctype="multipart/form-data"> 
+  <table>
+  <tr>
+  <td colpan="4"><h2>Credit Card Information</h2></td>
+   </tr>
+  	<tr>
+  		<td>Card Type:</td>
+  		<td><select>
+  			<option value="discover">Discover</option>
+ 		 	<option value="masercard">Mastercard</option>
+ 		 	<option value="visa">Visa</option>
+ 		 	<option value="amex">American Express</option>
+			</select></td>
+  		<td>Card Number:</td><td><input name="name" type="text" value="" size="30"/></td>
+  	</tr>
+ <tr>
+       	
+    	<td>Expiration Date:</td><td> <input type="date" size="30"></td>
+    	<td>Security Code (or "CVC" or "CVV")</td><td><input name="name" type="text" value="" size="30"/> </td>
+    </tr>
+    <tr>
+  <td colpan="4"><h2>Billing Information</h2></td>
+   </tr>
+  	<tr>
+    	<td>First Name:</td><td><input name="name" type="text" value="" size="30"/></td>
+    	<td>Last Name:</td><td><input name="name" type="text" value="" size="30"/></td>
+    </tr>
+    <tr>
+    	<td>Street</td>
+    	<td><input name="street" type="text" value="" size="30"/></td>
+    	<td>City:</td>
+    	<td><input name="city" type="text" value="" size="30"/></td>
+    </tr>
+    <tr>
+    	<td>State:</td>
+    	<td><input name="state" type="text" value="" size="30"/></td>
+    	<td>Zipcode:</td>
+    	<td><input name="state" type="text" value="" size="30"/></td>
+    </tr>
+   <tr>
+  <td colpan="4"><h2>Submit Payment</h2></td>
+   </tr>
+	<tr>
+		<td><input type="submit" value="Submit"/></td>
+	</tr>
+    </table>
+  </p>
+    </div>
+</div>
+<div id="footer_container">
+    <div id="footer">
+        <p id="footer">Page created by: Austin, Max, Thomas, and Pat</p>
+  		<p id="footer">Last Updated: April 22, 2014</p>
+  		<p id="footer">Copyright Key in Car Rental Corporation</p>
+    </div>
+</div>
+ </body>
+</html>
