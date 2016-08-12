@@ -1,16 +1,23 @@
 /* Reset body padding and margins */
 body {
+
 	font-family: "Arial";
 	background: #ddf1f0;
-    margin:0; 
-	padding:0; 
+    margin:0;
+	padding:0;
   	background-attachment: fixed;
   	background-position: top;
+
 	}
 
 @font-face {
-    font-family: MrEaves;
+    font-family: MrEavesSanReg;
     src: url("MrEavesSanOT-Reg.otf") format("opentype");
+    }
+
+@font-face {
+    font-family: MrEavesSanBold;
+    src: url("MrEavesSanOT-Heavy.otf") format("opentype");
     }
 
 /* Make Footer Sticky */
@@ -22,7 +29,7 @@ body {
     }
 
 #footer_container {
-    font-family: MrEaves;
+    font-family: MrEavesSanReg;
     line-height:2em;
     text-align:left;
     height: 230px;
@@ -42,23 +49,13 @@ body {
     text-align: center;
     padding-bottom: 20px;
     font-size: 250%;
-    font-family: MrEaves;
+    font-family: MrEavesSanReg;
  }
 
 #navigation {
    padding-bottom: 20px;
    font-size: 150%;
-   font-family: MrEaves;
-}
-
-#nav {
- 	background: #cceeff;
-    width:100%;
-	height:50px;
-	box-shadow: 0px 1px 50px #5E5E5E;
-  	text-align:center;
-    border-width:1px 0;
-    list-style:none;
+   font-family: MrEavesSanBold;
 }
 
 table#table1 {
@@ -68,46 +65,20 @@ table#table1 {
     padding-bottom: 40px;
   }
 
+
 a{
-	color: #262626;
+    color:inherit;
 	padding: 0px;
 	text-decoration: none;
 	display:inline-block;
-}
-
-p.footer{
-	display:inline;
-	padding:10px;
 }
 
 table{
 	width: 100%;
 }
 
-embed{
-
-}
-
-.wrap {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.container {
-  padding-top: 100px;
-  float: right;
-}
-
-#menu {
-  position:relative;
-  height: 45px;
-}
-
-#text{
-	width: 100%;
-}
-
-#swf{
-	position:;
-	padding-top: 500px;
+#floating_image {
+    position: fixed;
+    padding-top: 300px;
+    z-index: 10;
 }
