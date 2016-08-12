@@ -10,29 +10,24 @@ body {
 	
 	}
 
-/* Make Footer Sticky */
-#footer_container {
-    background:#262626; 
-    border:1px 
-    solid #666; 
-    bottom:0; 
-    height:95px; 
-    left:0; 
-    position:relative; 
-    width:100%;
+@font-face {
+    font-family: MrEaves;
+    src: url("C:/Users/jmhud/Documents/Lexie/MrEavesSanOT-Reg.otf") format("opentype");
     }
 
-@font-face {
-font-family: MrEaves;
-src: url("MrEavesSanOT-Reg.otf") format("opentype");
-}
-
+/* Make Footer Sticky */
 #footer {
-    line-height:2em;
     margin:0 auto;
-    width:940px;
-    text-align:center;
-    height: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width:25%;
+    }
+
+#footer_container {
+    font-family: MrEaves;
+    line-height:2em;
+    text-align:left;
+    height: 230px;
     background-color: #262626;
     width:100%;
     position: relative;
@@ -73,6 +68,7 @@ table#table1 {
     text-align:center;
     margin-left:auto;
     margin-right:auto;
+    padding-bottom: 40px;
   }
 
 
