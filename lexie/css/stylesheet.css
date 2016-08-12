@@ -22,10 +22,15 @@ body {
     width:100%;
     }
 
+@font-face {
+font-family: MrEaves;
+src: url("MrEavesSanOT-Reg.otf") format("opentype");
+}
+
 #footer {
-    line-height:2em; 
-    margin:0 auto; 
-    width:940px; 
+    line-height:2em;
+    margin:0 auto;
+    width:940px;
     text-align:center;
     height: 30px;
     background-color: #262626;
@@ -34,18 +39,23 @@ body {
     color: white;
     }
 
-#header { 
-	width:100%;  
-	height: 100px;
+#header {
+	width:100%;
+	height: 80px;
     text-align: center;
 	}
 
  #header_logo {
-    padding-top: 25px;
- }   
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 250%;
+    font-family: MrEaves;
+ }
 
-#nav_contents {
-   padding-top: 15px; 
+#navigation {
+   padding-bottom: 20px;
+   font-size: 150%;
+   font-family: MrEaves;
 }
 
 #nav
@@ -58,6 +68,12 @@ body {
     border-width:1px 0;
     list-style:none;
 }
+
+table#table1 {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
 
 a{
