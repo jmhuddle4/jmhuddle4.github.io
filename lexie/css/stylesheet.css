@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: MrEaves;
-    src: url("C:/Users/jmhud/Documents/Lexie/MrEavesSanOT-Reg.otf") format("opentype");
+    src: url("MrEavesSanOT-Reg.otf") format("opentype");
     }
 
 /* Make Footer Sticky */
