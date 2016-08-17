@@ -7,16 +7,10 @@ body {
 	padding:0; 
   	background-attachment: fixed;
   	background-position: top;
-	
 	}
  
 /* Make Header Sticky - use stylesheet2 for header and nav*/
-#header_container { 
-
-	
-	background: #262626;
-	border:1px solid #666;  
-	position:fixed; 
+#header_container {  
 	width:100%;  
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -24,7 +18,6 @@ body {
 	}
 	
 #header{
-
 	background: #262626;
 	margin:0 auto; 
 	width:50%;
