@@ -1,15 +1,18 @@
  function changeImage() {
 
-    if (document.getElementById("imgToChange").src == "https://66.media.tumblr.com/c379d02270d7c0d34a913882d2bc790e/tumblr_obk6y4EVJr1tbed15o2_1280.png") 
+    //2nd image
+    if (document.getElementById("imgToChange").src == "https://66.media.tumblr.com/6c57a17efb5ce610e572ccffa20a2116/tumblr_ocaba5cInB1uzg32xo1_540.png") 
     {
-        document.getElementById("imgToChange").src = "https://66.media.tumblr.com/fbcb7869bdb93a520b5fbfa7a3c0768a/tumblr_obk6y4EVJr1tbed15o1_1280.png";
+        //1st image
+        document.getElementById("imgToChange").src = "https://66.media.tumblr.com/9956ddecd50d5070e77668453a2031ac/tumblr_ocaba5cInB1uzg32xo2_540.png";
         document.body.style.background = '#fbf9f9';
         document.body.style.color = "black";
     }
     else 
     {
-        document.getElementById("imgToChange").src = "https://66.media.tumblr.com/c379d02270d7c0d34a913882d2bc790e/tumblr_obk6y4EVJr1tbed15o2_1280.png";
-        document.body.style.background = '#59a063';
+        //2nd image
+        document.getElementById("imgToChange").src = "https://66.media.tumblr.com/6c57a17efb5ce610e572ccffa20a2116/tumblr_ocaba5cInB1uzg32xo1_540.png";
+        document.body.style.background = '#6fc38e'; //dark color
         document.body.style.color = "white";
     }
 
