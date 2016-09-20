@@ -26,15 +26,44 @@
     -moz-transform: translate(0px,8px); /** Firefox **/
 }
 
+.overlay:hover {
+    opacity:0.5;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper .text {
+    position:relative;
+    left:0px;
+    visibility:hidden;
+}
+
+.wrapper:hover .text {
+    visibility:visible;
+    font-family:MrEavesSanBoldItalic;
+    font-size:300%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
 .arrow span{
-    position: relative;
+    display: table;
+    position: absolute;
     opacity:0.0;
     filter:alpha(opacity=0);
 }
 
 .arrow:hover span{ /*CSS for enlarged image on hover*/
     opacity:1.0;
-    filter:alpha(opacity=100);/*position where
+    filter:alpha(opacity=100);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    /*position where
     enlarged image should offset horizontally */
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -142,13 +171,18 @@
 	padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-	}
+}
 
  #header_logo {
     text-align: center;
     padding-bottom: 50px;
     font-size: 200%;
     font-family: MrEavesSanReg;
+ }
+
+ #imgToChange {
+    cursor: pointer;
+    cursor: hand;
  }
 
 #navigation {
@@ -183,11 +217,16 @@ body {
     src: url("MrEavesSanOT-Heavy.otf") format("opentype");
 }
 
+@font-face {
+    font-family: MrEavesSanBoldItalic;
+    src: url("MrEavesSanOT-BoldItalic.otf") format("opentype");
+}
+
 .table1 {
     text-align:center;
     margin-left:auto;
     margin-right:auto;
-    padding-bottom: 40px;
+    padding-bottom:30px;
   }
 
 table{
