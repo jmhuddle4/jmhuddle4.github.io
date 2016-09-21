@@ -28,10 +28,6 @@
 
 .overlay:hover {
     opacity:0.5;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
 .wrapper .text {
@@ -44,10 +40,6 @@
     visibility:visible;
     font-family:MrEavesSanBoldItalic;
     font-size:300%;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
 .arrow span{
@@ -69,6 +61,11 @@
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+.demo-box {
+    display:block;
+    text-align:center;
 }
 
 .wrap {
@@ -175,7 +172,6 @@
 
  #header_logo {
     text-align: center;
-    padding-bottom: 50px;
     font-size: 200%;
     font-family: MrEavesSanReg;
  }
@@ -186,9 +182,18 @@
  }
 
 #navigation {
-   padding-bottom: 20px;
-   font-size: 80%;
+   font-size: 90%;
    font-family: MrEavesSanReg;
+   padding-bottom:25px;
+}
+
+#navigation th{
+    width:33%;
+    vertical-align:bottom;
+}
+
+#navigation a{
+    padding-bottom:3px;
 }
 
 a {
