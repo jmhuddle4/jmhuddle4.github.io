@@ -8,7 +8,7 @@
         //1st image
         document.getElementById("imgToChange").src = "https://66.media.tumblr.com/9956ddecd50d5070e77668453a2031ac/tumblr_ocaba5cInB1uzg32xo2_540.png"; //green
         document.body.style.background = '#fbf9f9'; //light
-        document.body.style.color = "black"; //text
+        document.body.style.color = "#928d88"; //text
     }
     else 
     {

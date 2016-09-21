@@ -68,6 +68,12 @@
     text-align:center;
 }
 
+.description {
+    font-family: MrEavesSanReg;
+    font-size: 95%;
+    padding-left:10%;
+}
+
 .wrap {
     width: 100px;
     height: 100px;
@@ -204,12 +210,11 @@ a {
 }
 
 body {
-    font-family: "Arial";
+    font-family: MrEavesSanReg;
+    color: #928d88;
     background: #fbf9f9;
     margin:0;
     padding:0;
-    background-attachment: fixed;
-    background-position: top;
 }
 
 @font-face {
@@ -219,7 +224,7 @@ body {
 
 @font-face {
     font-family: MrEavesSanBold;
-    src: url("MrEavesSanOT-Heavy.otf") format("opentype");
+    src: url("MrEavesSanOT-Bold.otf") format("opentype");
 }
 
 @font-face {
