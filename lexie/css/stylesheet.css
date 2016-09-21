@@ -39,7 +39,7 @@
 .wrapper:hover .text {
     visibility:visible;
     font-family:MrEavesSanBoldItalic;
-    font-size:300%;
+    font-size:250%;
 }
 
 .arrow span{
