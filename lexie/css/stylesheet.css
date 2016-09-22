@@ -204,7 +204,6 @@
 #navigation {
    font-size: 90%;
    font-family: MrEavesSanReg;
-   padding-bottom:25px;
 }
 
 #navigation th{
@@ -255,5 +254,4 @@ body {
 
 table{
 	width: 100%;
-	padding-bottom:30px;
 }
