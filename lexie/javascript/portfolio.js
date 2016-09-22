@@ -41,8 +41,8 @@ function slideImageLeft() {
     }
 }
 
- $(document).ready(function(){
-  // Add smooth scrolling to all links
+// Add smooth scrolling to all links
+$(document).ready(function(){
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -71,10 +71,14 @@ $(document).ready(function(){
     $('#floating_image').fadeOut();
     $(document).scroll(function() {
       var y = $(this).scrollTop();
-      if (y != 0 || y > 800) {
+      if (y > 800) {
         $('#floating_image').fadeIn();
+        $('.description').fadeOut();
+        $('.description-title').fadeOut();
       } else {
         $('#floating_image').fadeOut();
+        $('.description').fadeIn();
+        $('.description-title').fadeIn();
       }
     });
 });

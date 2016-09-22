@@ -26,22 +26,6 @@
     -moz-transform: translate(0px,8px); /** Firefox **/
 }
 
-.overlay:hover {
-    opacity:0.5;
-}
-
-.wrapper .text {
-    position:relative;
-    left:0px;
-    visibility:hidden;
-}
-
-.wrapper:hover .text {
-    visibility:visible;
-    font-family:MrEavesSanBoldItalic;
-    font-size:300%;
-}
-
 .arrow span{
     display: table;
     position: absolute;
@@ -74,14 +58,44 @@
     padding-left:10%;
 }
 
+.description-title {
+    font-family: MrEavesSanBold;
+}
+
+.inner {
+    transition: transform 3s linear;
+}
+
+.overlay:hover {
+    opacity:0.5;
+}
+
+.project {
+    width:30%;
+    vertical-align:top;
+    text-align:right;
+    padding-top:40px;
+    padding-bottom:30px;
+    position:fixed;
+}
+
 .wrap {
     width: 100px;
     height: 100px;
     transition: transform 1s linear;
 }
-.inner {
-    transition: transform 3s linear;
+.wrapper .text {
+    position:relative;
+    left:0px;
+    visibility:hidden;
 }
+
+.wrapper:hover .text {
+    visibility:visible;
+    font-family:MrEavesSanBoldItalic;
+    font-size:300%;
+}
+
 .wrap:hover {
     transform: scale(1.5);
 }
@@ -210,9 +224,9 @@ a {
 }
 
 body {
-    font-family: MrEavesSanReg;
     color: #928d88;
     background: #fbf9f9;
+    font-family: MrEavesSanReg;
     margin:0;
     padding:0;
 }
@@ -241,4 +255,5 @@ body {
 
 table{
 	width: 100%;
+	padding-bottom:30px;
 }
