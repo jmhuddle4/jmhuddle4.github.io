@@ -2,19 +2,33 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script>
-	$(function(){
-	  $("#global-header").load("https://raw.githubusercontent.com/jmhuddle4/jmhuddle4.github.io/master/lexie/header.html");
-	});
-	</script>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="shortcut icon" href="img/Page_Graphics/Lexie_Mark-02.png">
 	<title>Lexie Craig's Portfolio</title>
 </head>
 <body>
-<div id="global-header">
-	</div>
+<div id="header">
+	<img id="imgToChange" width=40px height=40px align=center src="https://67.media.tumblr.com/2100b64831891821cbe543895e736484/tumblr_odvv47EYmj1uzg32xo1_1280.png"
+		 onclick="changeImage()">
+	<script src="javascript/portfolio.js"> </script>
+</div>
+<div id ="navigation">
+	<table>
+		<tr>
+			<th>&nbsp;</th>
+			<th id="header_logo">Lexie Craig</th>
+			<th>
+				<a href="index.html" >Work</a>
+				<a target="_blank" href="img/Lexie_Resume.png" style="padding-left:15%;">Resume</a>
+				<a href="#footer" style="padding-right:25%;padding-left:15%;">Contact</a>
+			</th>
+		</tr>
+	</table>
+</div>
+<hr id="navbar" align="left">
+<a href="#header">
+	<img width="60px" id="floating_image" src="img/Page_Graphics/uparrow.png"/>
+</a>
 <div id="demo-area">
 	<div style="height:533px;" class="overlay wrapper">
 		<a href="invisiblecities.html">
