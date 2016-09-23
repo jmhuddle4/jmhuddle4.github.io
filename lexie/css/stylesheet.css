@@ -68,6 +68,10 @@
 
 .overlay:hover {
     opacity:0.5;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .project {
@@ -154,6 +158,7 @@
 .letterG {
     left: 56%;
 }
+
 #floating_image {
     position: fixed;
     bottom: 30px;
@@ -196,6 +201,17 @@
 	padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+}
+
+#header:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25); /** Chrome & Safari **/
+    -o-transform: scale(1.25); /** Opera **/
+    -moz-transform: scale(1.25); /** Firefox **/
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
  #header_logo {
