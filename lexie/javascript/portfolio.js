@@ -43,6 +43,9 @@ $(document).ready(function(){
     });
 });
 
+demoboxes = document.getElementsByClassName("demo-img");
+demotexts = document.getElementsByClassName("text");
+
 function changeImage() {
     //2nd image
     if (document.getElementById("imgToChange").src == "https://66.media.tumblr.com/6c57a17efb5ce610e572ccffa20a2116/tumblr_ocaba5cInB1uzg32xo1_540.png")
@@ -52,6 +55,13 @@ function changeImage() {
         document.body.style.background = '#fbf9f9'; //light
         document.body.style.color = "#928d88"; //gray text
         document.getElementById("navbar").style.background = "#928d88";
+
+        for (var i = 0; i < demoboxes.length; i++) {
+            demoboxes[i].style.backgroundColor="#fbf9f9";
+        }
+        for (var i = 0; i < demotexts.length; i++) {
+            demotexts[i].style.color="#928d88";
+        }
     }
     else
     {
@@ -60,5 +70,12 @@ function changeImage() {
         document.body.style.background = '#6fc38e'; //dark color
         document.body.style.color = "white"; //text
         document.getElementById("navbar").style.background = "white";
+
+        for (var i = 0; i < demoboxes.length; i++) {
+            demoboxes[i].style.backgroundColor="white";
+        }
+        for (var i = 0; i < demotexts.length; i++) {
+            demotexts[i].style.color="#928d88";
+        }
     }
 }

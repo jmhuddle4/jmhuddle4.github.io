@@ -84,6 +84,7 @@
     height: 100px;
     transition: transform 1s linear;
 }
+
 .wrapper .text {
     position:relative;
     left:0px;
@@ -99,6 +100,7 @@
 .wrap:hover {
     transform: scale(1.5);
 }
+
 .wrap:hover .inner {
     transform: rotate(45deg);
 }
@@ -159,10 +161,16 @@
     z-index: 10;
 }
 
-#demo-area {
-    text-align:center;
-    display:block;
+.demo-area {
+      vertical-align: middle;
+      text-align: center;
+}
 
+.demo-img {
+    width:680px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #footer {
