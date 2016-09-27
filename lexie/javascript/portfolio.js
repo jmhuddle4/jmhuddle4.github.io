@@ -79,3 +79,11 @@ function changeImage() {
         }
     }
 }
+
+function getNavbarLocation() {
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var location = (w/2)-16;
+    console.log("width: "+w+" (width/2)-16: "+location);
+    document.getElementById("navbar").setAttribute("style","width:500px");
+    document.getElementById("navbar").style.width = "500px";
+}

@@ -1,31 +1,3 @@
-#axis:hover .move-left {
-    transform: translate(-8px,0px);
-    -webkit-transform: translate(-8px,0px); /** Chrome & Safari **/
-    -o-transform: translate(-8px,0px); /** Opera **/
-    -moz-transform: translate(-8px,0px); /** Firefox **/
-}
-
-#axis:hover .move-right-up{
-    transform: translate(8px,8px);
-    -webkit-transform: translate(8px,8px); /** Chrome & Safari **/
-    -o-transform: translate(8px,8px); /** Opera **/
-    -moz-transform: translate(8px,8px); /** Firefox **/
-}
-
-#axis:hover .move-up{
-    transform: translate(0px,-8px);
-    -webkit-transform: translate(0px,-8px); /** Chrome & Safari **/
-    -o-transform: translate(0px,-8px); /** Opera **/
-    -moz-transform: translate(0px,-8px); /** Firefox **/
-}
-
-#axis:hover .move-down{
-    transform: translate(0px,8px);
-    -webkit-transform: translate(0px,8px); /** Chrome & Safari **/
-    -o-transform: translate(0px,8px); /** Opera **/
-    -moz-transform: translate(0px,8px); /** Firefox **/
-}
-
 .arrow span{
     display: table;
     position: absolute;
@@ -47,9 +19,21 @@
     transition: all 0.5s ease-in-out;
 }
 
+.demo-area {
+    vertical-align: middle;
+    text-align: center;
+}
+
 .demo-box {
     display:block;
     text-align:center;
+}
+
+.demo-img {
+    width:680px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .description {
@@ -62,16 +46,88 @@
     font-family: MrEavesSanBold;
 }
 
-.inner {
-    transition: transform 3s linear;
+#floating_image {
+    position: fixed;
+    bottom: 30px;
+    left: 1%;
+    z-index: 10;
 }
 
-.overlay:hover {
-    opacity:0.5;
+#footer {
+    margin:0 auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width:25%;
+}
+
+#footer_container {
+    font-family: MrEavesSanReg;
+    line-height:2em;
+    text-align:left;
+    height: 230px;
+    background-color: #262626;
+    width:100%;
+    position: relative;
+    color: white;
+}
+
+#header {
+	width:100%;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#header:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25); /** Chrome & Safari **/
+    -o-transform: scale(1.25); /** Opera **/
+    -moz-transform: scale(1.25); /** Firefox **/
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+}
+
+#header_logo {
+    text-align: center;
+    font-size: 200%;
+    font-family: MrEavesSanReg;
+}
+
+#imgToChange {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.inner {
+    transition: transform 3s linear;
+}
+
+#navbar {
+    height:5px;
+    background-color:#928d88;
+    border:none;
+    width:54.35%;
+    margin:0;
+}
+
+#navigation {
+   font-size: 90%;
+   font-family: MrEavesSanReg;
+}
+
+#navigation th{
+    width:33%;
+    vertical-align:bottom;
+}
+
+#navigation a{
+    padding-bottom:3px;
+}
+
+.overlay:hover {
+    opacity:0.5;
 }
 
 .project {
@@ -81,6 +137,13 @@
     padding-top:40px;
     padding-bottom:30px;
     position:fixed;
+}
+
+.table1 {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30px;
 }
 
 .wrap {
@@ -107,144 +170,6 @@
 
 .wrap:hover .inner {
     transform: rotate(45deg);
-}
-
-.object {
-    position: absolute;
-    margin: 2px;
-    /*transition: all 2s ease-in-out;*/
-    transition: transform .25s linear;
-    -webkit-transition: transform .25s linear; /** Chrome & Safari **/
-    -moz-transition: transform .25s linear; /** Firefox **/
-    -o-transition: transform .25s linear; /** Opera **/
-}
-
-.letterL {
-    left: 45%;
-}
-
-.letterE {
-    left: 46%;
-}
-
-.letterX {
-    left: 47%;
-}
-
-.letterI {
-    left: 48%;
-}
-
-.letterE2 {
-    left: 49%;
-}
-
-.letterC {
-    left: 51%;
-}
-
-.letterR {
-    left: 53%;
-}
-
-.letterA {
-    left: 54%;
-}
-
-.letterI2 {
-    left: 55%;
-}
-
-.letterG {
-    left: 56%;
-}
-
-#floating_image {
-    position: fixed;
-    bottom: 30px;
-    left: 1%;
-    z-index: 10;
-}
-
-.demo-area {
-      vertical-align: middle;
-      text-align: center;
-}
-
-.demo-img {
-    width:680px;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#footer {
-    margin:0 auto;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    width:25%;
-    }
-
-#footer_container {
-    font-family: MrEavesSanReg;
-    line-height:2em;
-    text-align:left;
-    height: 230px;
-    background-color: #262626;
-    width:100%;
-    position: relative;
-    color: white;
-    }
-
-#header {
-	width:100%;
-	padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-#header:hover{
-    transform: scale(1.25);
-    -webkit-transform: scale(1.25); /** Chrome & Safari **/
-    -o-transform: scale(1.25); /** Opera **/
-    -moz-transform: scale(1.25); /** Firefox **/
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
- #header_logo {
-    text-align: center;
-    font-size: 200%;
-    font-family: MrEavesSanReg;
- }
-
- #imgToChange {
-    cursor: pointer;
-    cursor: hand;
- }
-
-#navbar {
-    height:5px;
-    background-color:#928d88;
-    border:none;
-    width:54.35%;
-    margin:0;
-}
-
-#navigation {
-   font-size: 90%;
-   font-family: MrEavesSanReg;
-}
-
-#navigation th{
-    width:33%;
-    vertical-align:bottom;
-}
-
-#navigation a{
-    padding-bottom:3px;
 }
 
 a {
@@ -276,13 +201,6 @@ body {
     font-family: MrEavesSanBoldItalic;
     src: url("MrEavesSanOT-BoldItalic.otf") format("opentype");
 }
-
-.table1 {
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    padding-bottom:30px;
-  }
 
 table{
 	width: 100%;

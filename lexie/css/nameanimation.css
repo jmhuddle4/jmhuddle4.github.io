@@ -1,0 +1,77 @@
+#axis:hover .move-left {
+    transform: translate(-8px,0px);
+    -webkit-transform: translate(-8px,0px); /** Chrome & Safari **/
+    -o-transform: translate(-8px,0px); /** Opera **/
+    -moz-transform: translate(-8px,0px); /** Firefox **/
+}
+
+#axis:hover .move-right-up{
+    transform: translate(8px,8px);
+    -webkit-transform: translate(8px,8px); /** Chrome & Safari **/
+    -o-transform: translate(8px,8px); /** Opera **/
+    -moz-transform: translate(8px,8px); /** Firefox **/
+}
+
+#axis:hover .move-up{
+    transform: translate(0px,-8px);
+    -webkit-transform: translate(0px,-8px); /** Chrome & Safari **/
+    -o-transform: translate(0px,-8px); /** Opera **/
+    -moz-transform: translate(0px,-8px); /** Firefox **/
+}
+
+#axis:hover .move-down{
+    transform: translate(0px,8px);
+    -webkit-transform: translate(0px,8px); /** Chrome & Safari **/
+    -o-transform: translate(0px,8px); /** Opera **/
+    -moz-transform: translate(0px,8px); /** Firefox **/
+}
+
+.object {
+    position: absolute;
+    margin: 2px;
+    /*transition: all 2s ease-in-out;*/
+    transition: transform .25s linear;
+    -webkit-transition: transform .25s linear; /** Chrome & Safari **/
+    -moz-transition: transform .25s linear; /** Firefox **/
+    -o-transition: transform .25s linear; /** Opera **/
+}
+
+.letterL {
+    left: 45%;
+}
+
+.letterE {
+    left: 46%;
+}
+
+.letterX {
+    left: 47%;
+}
+
+.letterI {
+    left: 48%;
+}
+
+.letterE2 {
+    left: 49%;
+}
+
+.letterC {
+    left: 51%;
+}
+
+.letterR {
+    left: 53%;
+}
+
+.letterA {
+    left: 54%;
+}
+
+.letterI2 {
+    left: 55%;
+}
+
+.letterG {
+    left: 56%;
+}
