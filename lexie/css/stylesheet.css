@@ -27,6 +27,7 @@
 .demo-box {
     display:block;
     text-align:center;
+    padding-bottom:20px;
 }
 
 .demo-img {
@@ -34,6 +35,7 @@
     display: block;
     margin-left:auto;
     margin-right:auto;
+    padding-bottom:30px;
 }
 
 .description {
