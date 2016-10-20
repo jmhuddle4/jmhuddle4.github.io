@@ -1,5 +1,8 @@
 // fade in page load
-$(document).ready(function(){$("body").hide().fadeIn(1000);});
+$(document).ready(function(){
+    $("body").hide().fadeIn(1000);
+    getNavbarLocation();
+});
 
 // Add smooth scrolling to all links
 $(document).ready(function(){
@@ -80,10 +83,11 @@ function changeImage() {
     }
 }
 
+$(window).resize(function () { getNavbarLocation() });
+
 function getNavbarLocation() {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var location = (w/2)-16;
-    console.log("width: "+w+" (width/2)-16: "+location);
-    document.getElementById("navbar").setAttribute("style","width:500px");
-    document.getElementById("navbar").style.width = "500px";
+    var w = document.body.scrollWidth;
+    var location = (w/2)+57;
+    console.log("width: "+w+" (width/2)+57: "+location);
+    document.getElementById("navbar").style.width = location+"px";
 }
