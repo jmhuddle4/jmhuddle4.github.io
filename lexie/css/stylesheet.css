@@ -27,7 +27,6 @@
 .demo-box {
     display:block;
     text-align:center;
-    padding-bottom:20px;
 }
 
 .demo-img {
@@ -71,6 +70,10 @@
     width:100%;
     position: relative;
     color: white;
+}
+
+#footer_space {
+    padding-bottom:50px;
 }
 
 #header {

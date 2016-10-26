@@ -46,7 +46,8 @@ $(document).ready(function(){
     });
 });
 
-demoboxes = document.getElementsByClassName("demo-img");
+demoimages = document.getElementsByClassName("demo-img");
+demoboxes = document.getElementsByClassName("demo-box");
 demotexts = document.getElementsByClassName("text");
 
 function changeImage() {
@@ -59,9 +60,14 @@ function changeImage() {
         document.body.style.color = "#928d88"; //gray text
         document.getElementById("navbar").style.background = "#928d88";
 
+        for (var i = 0; i < demoimages.length; i++) {
+            demoimages[i].style.backgroundColor="#fbf9f9";
+        }
+
         for (var i = 0; i < demoboxes.length; i++) {
             demoboxes[i].style.backgroundColor="#fbf9f9";
         }
+
         for (var i = 0; i < demotexts.length; i++) {
             demotexts[i].style.color="#928d88";
         }
@@ -74,9 +80,14 @@ function changeImage() {
         document.body.style.color = "white"; //text
         document.getElementById("navbar").style.background = "white";
 
+        for (var i = 0; i < demoimages.length; i++) {
+            demoimages[i].style.backgroundColor="white";
+        }
+
         for (var i = 0; i < demoboxes.length; i++) {
             demoboxes[i].style.backgroundColor="white";
         }
+
         for (var i = 0; i < demotexts.length; i++) {
             demotexts[i].style.color="#928d88";
         }
