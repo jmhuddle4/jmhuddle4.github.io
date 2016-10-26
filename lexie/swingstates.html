@@ -2,6 +2,7 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="javascript/portfolio.js"> </script>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="shortcut icon" href="https://67.media.tumblr.com/2100b64831891821cbe543895e736484/tumblr_odvv47EYmj1uzg32xo1_1280.png">
 	<title>Lexie Craig's Portfolio - Swing States</title>
@@ -10,7 +11,6 @@
 <div id="header">
 	<img id="imgToChange" width=30px height=30px align=center src="https://66.media.tumblr.com/9956ddecd50d5070e77668453a2031ac/tumblr_ocaba5cInB1uzg32xo2_540.png"
 		 onclick="changeImage()">
-	<script src="javascript/portfolio.js"> </script>
 </div>
 <div id ="navigation">
 	<table>
@@ -30,6 +30,7 @@
 	<img width="60px" id="floating_image" src="img/Page_Graphics/uparrow.png"/>
 </a>
 <div id="demo-area">
+
 	<table>
 		 <tr>
 			 <th class="project">
@@ -41,14 +42,58 @@
 			  </th>
 			<th style="width:65%;">
 				<div class="demo-box">
-					<img width="750px" height=auto src ="img/Swing_states_1_Home.png"/>
+					<!--img width="750px" height=auto src ="img/Swing_States/Swing_states_1_Home.png"/-->
+					<div id="outer" style="position:relative">
+						<img id="swingMap" src = "img/Swing_States/Swing_states_home_sm.png"/>
+						<div class="inner" onmouseover="changeSwingMapImg('Colorado')" style="left:25px;"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('FLorida')" style="left:90px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Indiana')" style="left:150px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Iowa')" style="left:200px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Missouri')" style="left:250px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Nevada')" style="left:300px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('New_Hampshire')" style="left:400px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('New_Mexico')" style="left:450px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('North_Carolina')" style="left:550px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Ohio')" style="left:650px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Pennsylvania')" style="left:700px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Virginia')" style="left:750px"></div>
+						<div class="inner" onmouseover="changeSwingMapImg('Wisconsin')" style="left:800px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(2012)" style="left:33px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(2008)" style="left:66px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(2004)" style="left:99px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(2000)" style="left:132px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1996)" style="left:165px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1992)" style="left:198px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1988)" style="left:231px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1984)" style="left:264px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1980)" style="left:297px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1976)" style="left:330px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1972)" style="left:363px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1968)" style="left:396px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1964)" style="left:429px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1960)" style="left:460px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1956)" style="left:493px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1952)" style="left:524px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1948)" style="left:559px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1944)" style="left:592px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1940)" style="left:625px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1936)" style="left:658px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1932)" style="left:694px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1928)" style="left:728px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1924)" style="left:760px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1920)" style="left:793px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1916)" style="left:825px"></div>
+						<div class="lower" onmouseover="changeSwingMapImg(1912)" style="left:855px"></div>
+					</div>
 				</div>
-			 <th style="width:5%;">
-				 &nbsp;
-			 </th>
-		 </tr>
-	</table>
-</div>
+
+			<th style="width:5%;">
+				&nbsp;
+			</th>
+			</tr>
+			</table>
+	</div>
+
 <div id="footer_container">
 	<div id="footer">
 		Lexie Craig<br/>

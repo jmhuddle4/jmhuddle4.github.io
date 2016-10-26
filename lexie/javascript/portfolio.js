@@ -83,6 +83,10 @@ function changeImage() {
     }
 }
 
+function changeSwingMapImg(name) {
+    document.getElementById("swingMap").src = "img/Swing_States/"+name+".png";
+}
+
 $(window).resize(function () { getNavbarLocation() });
 
 function getNavbarLocation() {

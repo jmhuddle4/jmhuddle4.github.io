@@ -35,7 +35,7 @@
     display: block;
     margin-left:auto;
     margin-right:auto;
-    padding-bottom:30px;
+    padding-bottom:220px;
 }
 
 .description {
@@ -102,10 +102,6 @@
     cursor: hand;
 }
 
-.inner {
-    transition: transform 3s linear;
-}
-
 #navbar {
     height:5px;
     background-color:#928d88;
@@ -133,7 +129,7 @@
 }
 
 .project {
-    width:30%;
+    width:20%;
     vertical-align:top;
     text-align:right;
     padding-top:40px;
@@ -206,4 +202,27 @@ body {
 
 table{
 	width: 100%;
+}
+
+#swingMap {
+    width: 900px;
+    height: 602px;
+}
+
+.inner {
+    position:absolute;
+    top:90px;
+    width:50px;
+    height:25px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.lower {
+    position:absolute;
+    top:520px;
+    width:30px;
+    height:20px;
+    cursor: pointer;
+    cursor: hand;
 }
