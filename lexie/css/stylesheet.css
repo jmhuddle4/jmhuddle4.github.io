@@ -19,7 +19,20 @@
     transition: all 0.5s ease-in-out;
 }
 
+.column-one {
+    width:20%;
+}
+
+.column-two {
+    width:60%;
+}
+
+.column-three {
+    width:20%;
+}
+
 .demo-area {
+    position:relative;
     vertical-align: middle;
     text-align: center;
 }
@@ -29,12 +42,22 @@
     text-align:center;
 }
 
+.demo-container {
+    width:706px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .demo-img {
-    width:680px;
+    width:700px;
     display: block;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:220px;
+}
+
+.demo-text {
+    padding-bottom:75%;
 }
 
 .description {
@@ -73,6 +96,10 @@
 }
 
 #footer_space {
+    padding-bottom:50px;
+}
+
+#header_space {
     padding-bottom:50px;
 }
 
@@ -147,22 +174,22 @@
     padding-bottom:30px;
 }
 
+.text {
+    text-align:left;
+    font-family:MrEavesSanBoldItalic;
+    font-size:150%;
+    /*visibility:hidden;*/
+}
+
 .wrap {
     width: 100px;
     height: 100px;
     transition: transform 1s linear;
 }
 
-.wrapper .text {
+.demo-text .text {
     position:relative;
     left:0px;
-    visibility:hidden;
-}
-
-.wrapper:hover .text {
-    visibility:visible;
-    font-family:MrEavesSanBoldItalic;
-    font-size:300%;
 }
 
 .wrap:hover {
@@ -190,11 +217,14 @@ body {
 
 @font-face {
     font-family: MrEavesSanReg;
+    font-style: normal;
+    font-weight: 400;
     src: url("MrEavesSanOT-Reg.otf") format("opentype");
 }
 
 @font-face {
     font-family: MrEavesSanBold;
+    font-weight: 700;
     src: url("MrEavesSanOT-Bold.otf") format("opentype");
 }
 

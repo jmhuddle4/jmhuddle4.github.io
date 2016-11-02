@@ -46,9 +46,8 @@ $(document).ready(function(){
     });
 });
 
-demoimages = document.getElementsByClassName("demo-img");
 demoboxes = document.getElementsByClassName("demo-box");
-demotexts = document.getElementsByClassName("text");
+democontainers = document.getElementsByClassName("demo-container");
 
 function changeImage() {
     //2nd image
@@ -57,19 +56,13 @@ function changeImage() {
         //1st image
         document.getElementById("imgToChange").src = "https://67.media.tumblr.com/2100b64831891821cbe543895e736484/tumblr_odvv47EYmj1uzg32xo1_1280.png";
         document.body.style.background = '#fbf9f9'; //light
-        document.body.style.color = "#928d88"; //gray text
-        document.getElementById("navbar").style.background = "#928d88";
-
-        for (var i = 0; i < demoimages.length; i++) {
-            demoimages[i].style.backgroundColor="#fbf9f9";
-        }
 
         for (var i = 0; i < demoboxes.length; i++) {
             demoboxes[i].style.backgroundColor="#fbf9f9";
         }
 
-        for (var i = 0; i < demotexts.length; i++) {
-            demotexts[i].style.color="#928d88";
+        for (var i = 0; i < democontainers.length; i++) {
+            democontainers[i].style.backgroundColor="#fbf9f9";
         }
     }
     else
@@ -77,19 +70,13 @@ function changeImage() {
         //2nd image
         document.getElementById("imgToChange").src = "https://66.media.tumblr.com/6c57a17efb5ce610e572ccffa20a2116/tumblr_ocaba5cInB1uzg32xo1_540.png";
         document.body.style.background = '#6fc38e'; //dark color
-        document.body.style.color = "white"; //text
-        document.getElementById("navbar").style.background = "white";
-
-        for (var i = 0; i < demoimages.length; i++) {
-            demoimages[i].style.backgroundColor="white";
-        }
 
         for (var i = 0; i < demoboxes.length; i++) {
             demoboxes[i].style.backgroundColor="white";
         }
 
-        for (var i = 0; i < demotexts.length; i++) {
-            demotexts[i].style.color="#928d88";
+        for (var i = 0; i < democontainers.length; i++) {
+            democontainers[i].style.backgroundColor="white";
         }
     }
 }
@@ -106,3 +93,19 @@ function getNavbarLocation() {
     console.log("width: "+w+" (width/2)+57: "+location);
     document.getElementById("navbar").style.width = location+"px";
 }
+
+$(function() {
+
+    $('.text').css({opacity:0});
+
+    $('.overlay').hover(function() {
+        $('.text').stop().animate({
+            opacity: 1
+        },0);
+    },function() {
+        $('.text').stop().animate({
+            opacity: 0
+        },0);
+    });
+
+});
