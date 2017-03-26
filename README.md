@@ -1,4 +1,4 @@
 # jmhuddle4.github.io
-School project website
+Portfolio website for school projects & personal projects
 
 
