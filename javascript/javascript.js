@@ -1,4 +1,11 @@
+// Fade in page load
 $(document).ready(function(){
+    $("body").hide().fadeIn(1000);
+});
+
+// Fade in navbar
+$(document).ready(function(){
+  $('#nav').fadeOut();
 	$(document).scroll(function() {
 	  var y = $(this).scrollTop();
 	  if (y > 121) {
