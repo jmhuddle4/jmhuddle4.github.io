@@ -14,5 +14,5 @@
     "eject": "react-scripts eject",
     "deploy": "yarn run build && surge -p build -d your-domain.surge.sh"
   },
-  "homepage": "http://jmhuddle4.github.io/max-app"
+  "homepage": "http://jmhuddle4.github.io/max-app/public"
 }
